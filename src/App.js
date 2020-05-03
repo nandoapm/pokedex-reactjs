@@ -8,6 +8,8 @@ import Board from './components/Board';
 
 import store from './store'
 
+import './global.scss'
+
 function App() {
   return (
     <Provider store={store}>

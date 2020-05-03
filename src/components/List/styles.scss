@@ -1,0 +1,38 @@
+.container-list {
+    width: 100%;
+    max-width: 1200px;
+
+    .search {
+        width: 80%;
+        margin: 0 auto;
+
+        input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            border-bottom: solid 4px #ff0000;
+            outline: none;
+            font-size: 30px;
+        }    
+    }
+
+    .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+        button {
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            padding: 0 30px;
+        }
+    }
+}

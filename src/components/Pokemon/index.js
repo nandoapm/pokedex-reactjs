@@ -7,6 +7,8 @@ import * as PokemonActions from '../../store/actions/pokemon';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import './styles.scss'
+
 const Pokemon = ({ filter, show, detailed, filterPokemon, updatePage, pokemon }) => {
 
   const ref = useRef();
@@ -46,21 +48,22 @@ const Pokemon = ({ filter, show, detailed, filterPokemon, updatePage, pokemon })
   dragRef(ref);
 
   return (
-    <div className="" ref={ref} isDragging={isDragging} detailed={detailed} >
+    <div className="container-pokemon" ref={ref} isDragging={isDragging} detailed={detailed} >
       <div className="" onClick={() => { detailPokemon(pokemon.name) }}>
         
-        <div className="">
+        <div className="sprites">
             { pokemon.sprites.front_default && <img src={show ? pokemon.sprites.front_show ? pokemon.sprites.front_show : pokemon.sprites.front_default : pokemon.sprites.front_default} alt="" /> }
         </div>
 
-        <header>
+        <header className="name">
             <span>{pokemon.name}</span>
         </header>
       </div>
 
-      <div className="">
+      <div className="types">
           { pokemon.types.map(({type}, index) => <span key={index} onClick={() => { searchType(type) }} className={type.name}>{type.name} </span>) }
       </div>
+
       {detailed && 
         <div>
           <h1>

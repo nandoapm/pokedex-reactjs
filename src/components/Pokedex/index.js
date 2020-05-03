@@ -8,6 +8,8 @@ import { bindActionCreators } from 'redux';
 
 import Pokemon from '../Pokemon';
 
+import './styles.scss'
+
 const Pokedex = ({dragInPokemon, pokemon}) => {
 
   const ref = useRef();
@@ -22,11 +24,11 @@ const Pokedex = ({dragInPokemon, pokemon}) => {
   dropRef(ref);
 
   return (
-    <div className="" ref={ref}>
-        <header className="">
+    <div className="container-pokedex" ref={ref}>
+        <header className="titulo">
           <h3>Pokedex</h3>
         </header>
-        <div className="">
+        <div className="pokedex">
           { pokemon.length === 0 && <center>Arraste aqui para adicionar ou arraste fora para remover.</center> }
           { pokemon.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} shiny={false} detailed={false} /> )}
         </div>

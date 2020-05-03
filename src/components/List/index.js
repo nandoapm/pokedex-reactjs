@@ -8,7 +8,11 @@ import * as SearchActions from '../../store/actions/search';
 import * as PokemonActions from '../../store/actions/pokemon';
 import * as PokedexActions from '../../store/actions/pokedex';
 
+import { TiArrowBack, TiArrowForward } from "react-icons/ti";
+
 import Pokemon from '../Pokemon';
+
+import './styles.scss'
 
 const List = ({ loading,  home, frontPage, showPokemon, filterPokemon, setPokemon, filter, filteredPokemons, pokemons, backPage, nextPage, updatePage, dragOutPokemon }) => {
 
@@ -152,24 +156,31 @@ const List = ({ loading,  home, frontPage, showPokemon, filterPokemon, setPokemo
   });
 
   return (
-    <div ref={ref} className="container">
-      <div className="">
-        <input className="" value={filter} onChange={handleChange} placeholder="Buscar..." />
+    <div className="container-list" ref={ref}>
+      {/** buscar */}
+      <div className="search">
+        <input value={filter} onChange={handleChange} placeholder="Buscar..." />
       </div>
-      <div className="">
+
+      {/** lista */}
+      <div className="list">
         {filteredPokemons.slice(home, frontPage).map((pokemon, index) => <Pokemon key={index} pokemon={pokemon} detailed={filteredPokemons.length === 1 || details} />  )}
       </div>
+
+      {/** evolução */}
       { filteredPokemons.length === 1 &&
-        <div className="">
+        <div className="evolution">
           {evolutionList.map((evolution, index) => <Pokemon key={index} pokemon={evolution.data} detailed={false} />)}
         </div>
       }
-      <div className="">
-        {!(home === 0) && <button onClick={backList}>--</button>}
-        {!(filteredPokemons.slice(home, frontPage).length < 18) && <button onClick={frontList}>++</button>}
+
+      {/** paginação */}
+      <div className="pagination">
+        {!(home === 0) && <button onClick={backList}><TiArrowBack size="60" color="#ff0000"></TiArrowBack> </button>}
+        {!(filteredPokemons.slice(home, frontPage).length < 12) && <button onClick={frontList}><TiArrowForward size="60" color="#ff0000"></TiArrowForward></button>}
       </div>
     </div>
-  );
+  )
 }
 
 function mapStateToProps(state) {
