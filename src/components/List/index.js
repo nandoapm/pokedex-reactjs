@@ -157,6 +157,7 @@ const List = ({ loading,  home, frontPage, showPokemon, filterPokemon, setPokemo
 
   return (
     <div className="container-list" ref={ref}>
+      { loading && <div className="load">Loading...</div>}
       {/** buscar */}
       <div className="search">
         <input value={filter} onChange={handleChange} placeholder="Buscar..." />

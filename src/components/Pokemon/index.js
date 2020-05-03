@@ -65,12 +65,12 @@ const Pokemon = ({ filter, show, detailed, filterPokemon, updatePage, pokemon })
       </div>
 
       {detailed && 
-        <div>
+        <div className="card">
           <h1>
-            <span>Peso: </span>{pokemon.weight}kg | <span>Altura: </span>{pokemon.height}cm
+            <span>Peso: {pokemon.weight}kg</span> | <span>Altura: {pokemon.height}cm</span>
           </h1>
 
-          <h1>Estatísticas:</h1>
+          <h2>Estatísticas:</h2>
 
           <ul>
             {pokemon.stats.map((stat, index) => 
@@ -80,7 +80,7 @@ const Pokemon = ({ filter, show, detailed, filterPokemon, updatePage, pokemon })
             )}
           </ul>
           
-          <h1>Habilidades:</h1>
+          <h2>Habilidades:</h2>
 
           <ul>
             {pokemon.abilities.map((ability, index) => 

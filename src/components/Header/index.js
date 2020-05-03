@@ -5,7 +5,7 @@ import './styles.scss'
 export default function Header() {
   return (
       <div className="container-header" >
-        <h1>Pokemon</h1>
+        <h1 className="font">Pokémon</h1>
       </div>
   );
 }

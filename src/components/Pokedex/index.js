@@ -9,6 +9,7 @@ import { bindActionCreators } from 'redux';
 import Pokemon from '../Pokemon';
 
 import './styles.scss'
+import pokeball from '../../assets/pokeball.svg' 
 
 const Pokedex = ({dragInPokemon, pokemon}) => {
 
@@ -26,7 +27,7 @@ const Pokedex = ({dragInPokemon, pokemon}) => {
   return (
     <div className="container-pokedex" ref={ref}>
         <header className="titulo">
-          <h3>Pokedex</h3>
+          <img src={pokeball} alt="" />
         </header>
         <div className="pokedex">
           { pokemon.length === 0 && <center>Arraste aqui para adicionar ou arraste fora para remover.</center> }

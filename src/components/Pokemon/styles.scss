@@ -1,12 +1,14 @@
 .container-pokemon {
     margin: 0 auto;
     margin-top: 20px;
+    padding-bottom: 10px;
     font-size: 10px;
     text-align: center;
+    border: 2px solid #202020;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 
     .sprites {
-        background: whitesmoke;
-        border: 2px solid #ff2401;
         border-radius: 50%;
         margin: 20px;
         cursor: grabbing;
@@ -15,8 +17,10 @@
             width: 150px;
             color: green;
             &:hover {
-                width: 170px;
-                z-index: 2;
+                outline: none;
+                border-color: #9ecaed;
+                box-shadow: 0 0 10px #9ecaed;
+                border-radius: 50%;
             }
         }
     }
@@ -31,7 +35,7 @@
     }
 
     .types {
-        margin: 10px;
+        margin: 20px 0;
         cursor: pointer;
 
         span {
@@ -39,13 +43,13 @@
             width: 80px;
             text-transform: uppercase;
             padding: 7px;
-            margin: 3px;
+            margin: 5px;
             text-shadow: -1px -1px 0 black,  
                          1px -1px 0 black,
                          -1px 1px 0 black,
                          1px 1px 0 black;
             color: white;
-            border-radius: 10px;
+            border-radius: 5px;
             border: 2px solid white;
             box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 
@@ -54,74 +58,90 @@
 
     .water {
         width: 100px;
-        background: linear-gradient(to bottom, #7db9e8 0%,#308ff3 30%,#308ff3 70%,#7db9e8 100%);
+        background:#7db9e8;
     }
 
     .bug {
-        background: linear-gradient(to bottom, #acbc36 0%,#899b06 30%,#899b06 70%,#acbc36 100%);
+        background:#acbc36;
     }
 
     .dark {
-        background: linear-gradient(to bottom, #4f3c32 0%,#382a20 30%,#382a20 70%,#4f3c32 100%);
+        background:#4f3c32;
     }
 
     .dragon {
-        background: linear-gradient(to bottom, #7764db 0%,#4d437e 30%,#4d437e 70%,#7764db 100%);
+        background:#7764db;
     }
 
     .electric {
-        background: linear-gradient(to bottom, #f0e6c2 0%,#e99402 30%,#e99402 70%,#f0e6c2 100%);
+        background:#f0e6c2;
     }
 
     .fairy {
-        background: linear-gradient(to bottom, #e7b9ee 0%,#e991e4 30%,#e991e4 70%,#e7b9ee 100%);
+        background:#e991e4;
     }
 
     .fighting {
-        background: linear-gradient(to bottom, #853d28 0%,#5f2a10 30%,#5f2a10 70%,#853d28 100%);
+        background:#853d28;
     }
 
     .fire {
-        background: linear-gradient(to bottom, #f28a65 0%,#c22006 30%,#c22006 70%,#f28a65 100%);
+        background:#f28a65;
     }
 
     .flying {
-        background: linear-gradient(to bottom, #b7c1f4 0%,#5a73d6 30%,#5a73d6 70%,#b7c1f4 100%);
+        background:#b7c1f4;
     }
 
     .ghost {
-        background: linear-gradient(to bottom, #635cbe 0%,#464296 30%,#464296 70%,#635cbe 100%);
+        background:#635cbe;
     }
 
     .grass {
-        background: linear-gradient(to bottom, #72c03e 0%,#4a7e1f 30%,#4a7e1f 70%,#72c03e 100%);
+        background:#72c03e;
     }
 
     .ground {
-        background: linear-gradient(to bottom, #cdb053 0%,#867237 30%,#867237 70%,#cdb053 100%);
+        background:#867237;
     }
 
     .ice {
-        background: linear-gradient(to bottom, #b3e8fd 0%,#65d5f7 30%,#65d5f7 70%,#b3e8fd 100%);
+        background:#b3e8fd;
     }
 
     .normal {
-        background: linear-gradient(to bottom, #dbd6d1 0%,#aaa398 30%,#aaa398 70%,#dbd6d1 100%);
+        background:#dbd6d1;
     }
 
     .poison {
-        background: linear-gradient(to bottom, #97599a 0%,#5c2c5e 30%,#5c2c5e 70%,#97599a 100%);
+        background:#97599a;
     }
 
     .psychic {
-        background: linear-gradient(to bottom, #f5a7c2 0%,#dd2f65 30%,#dd2f65 70%,#f5a7c2 100%);
+        background:#f5a7c2;
     }
 
     .rock {
-        background: linear-gradient(to bottom, #ddd1ac 0%,#998636 30%,#998636 70%,#ddd1ac 100%);
+        background:#ddd1ac;
     }
 
     .steel {
-        background: linear-gradient(to bottom, #d3d2da 0%,#8f8c99 30%,#8f8c99 70%,#d3d2da 100%);
+        background:#d3d2da;
+    }
+
+    .card {
+        width: 300px;
+
+        h2 {
+            padding: 10px 0;
+        }
+
+        ul {
+            text-align: start;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 15px;
+            
+        }
     }
 }

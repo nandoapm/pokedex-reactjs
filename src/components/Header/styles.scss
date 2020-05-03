@@ -1,8 +1,18 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
 .container-header {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #ff0000;
     color: whitesmoke;
-    height: 50px;
+    height: 80px;
+
+    .font {
+        font-family: 'Pokemon';
+        text-shadow: 5px 5px #202020;
+        font-size: 50px;
+    }
+
+    
 }
