@@ -4,13 +4,12 @@ Projeto `pokedex` criado a partir da api https://pokeapi.co/, com o intuito de d
 # Projeto Criado em React JS
 
 ## Bibliotecas Utilizadas:
-`
+
 yarn add axios <br />
 yarn add node-sass <br />
 yarn add redux react-redux redux saga <br />
 yarn add react-dnd <br />
 yarn add react-dnd-html5-backend
-`
 
 ## Instalando as dependências:
 #### yarn install
