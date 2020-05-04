@@ -5,10 +5,10 @@ Projeto `pokedex` criado a partir da api https://pokeapi.co/, com o intuito de d
 
 ## Bibliotecas Utilizadas:
 `
-yarn add axios
-yarn add node-sass 
-yarn add redux react-redux redux saga
-yarn add react-dnd
+yarn add axios <br />
+yarn add node-sass <br />
+yarn add redux react-redux redux saga <br />
+yarn add react-dnd <br />
 yarn add react-dnd-html5-backend
 `
 
