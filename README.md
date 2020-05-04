@@ -1,5 +1,5 @@
 # Descrição do projeto 
-Projeto `pokedex` criado a partir da api https://pokeapi.co/, com o intuito de demontrar as habilidades em `React JS`, consumindo seus dados via Rest, listando os pokemons com fotos, imagens e habilidades. Utilizando as funções drag in drop, para arrastar para dentro ou para fora o pokemon para a pokedex.
+Projeto `pokedex` criado a partir da api https://pokeapi.co/, com o intuito de demontrar as habilidades em `React JS`, consumindo seus dados via Rest, listando os pokemons com fotos, imagens e habilidades. Utilizando as funções drag and drop, para arrastar para dentro ou para fora o pokemon para a pokedex.
 
 # Projeto Criado em React JS
 
